@@ -1,5 +1,5 @@
 ***  How To Run  ***
-  This app is built with a Ruby/Rails backend and a React frontend. It may be a bit overkill but it was I know to work with. That being said you will need to run both the Rails and React servers.
+  This app is built with a Ruby/Rails backend and a React frontend. It may be a bit overkill but its what I know and have to work with. That being said you will need to run both the Rails and React servers.
 
   Rails Setup
   • In the root of the application you will need to:
@@ -23,17 +23,17 @@
 
 
 ***  Challenges  ***
-  One of the biggest challenges I had was two lazy cats that made it hard to work. I wanted to follow the instructions and not spend too much time on it. I probably spent around 5 solid hours working on it and believe I could have finished if I had more time.
+  One of the biggest challenges I had was two needy cats that made it hard to work. I wanted to follow the instructions and not spend too much time on it. I probably spent around 5 solid hours working on it and believe I could have finished if I had more time.
 
   Here are some of the challenges that I faced:
 
     • Having not worked with CSVs too much I spent a good amount of time Googling ways to interact with them. I think a good chunk of the time was figuring out how to traverse all of the rows and then to build the updated CSV file. I used a ton of binding.prys to play with the CSV data and see what I had access to. I used Google anytime I was stuck and not sure where to go. 
 
-    • It took me a few minutes to figure out how to convert the updated CSV object to a JSON object but as it turns out I was overcomplicating it :D once I realized that I figured out how to do it pretty easy. 
+    • It took me a few minutes to figure out how to convert the updated CSV object to a JSON object but as it turns out I was overcomplicating it :D once I realized that I figured out how to do it pretty quickly.
 
-    • I figured out how to format the phone numbers in a super easy way using the NumberHelper class. But even though it worked pretty quick the format was broken if the phone number had an additional 1 before the area code. It doesn't seem like the best way to do it but I just checked to see if the phone number had 11 characters and if so I remove the first number. Works just fine assuming the phone numbers don't exceed 11 characters.
+    • I figured out how to format the phone numbers in an easy way using the NumberHelper class. But even though it worked pretty quickly, the format was broken if the phone number had an additional 1 before the area code. It doesn't seem like the best way to do it but I just checked to see if the phone number had 11 characters and if so I removed the first number. It works just fine assuming the phone numbers don't exceed 11 characters.
 
-    • I will admit that a lot of this stuff was pretty new to me. A lot of the solutions were found looking online but I do think that demonstrates that even though I didn't know how to do some of it that didn't stop me from being resourceful and find some assistance online. 
+    • I will admit that a lot of this stuff was pretty new to me. A lot of the solutions were found looking online but I do think that demonstrates that even though I didn't know how to do some of it, that didn't stop me from being resourceful and find some assistance online. 
 
 
 
@@ -45,9 +45,9 @@
 
     • I would have created a new json file with the same name as the report but probably would have appended removed to it to differentiate. 
 
-    • I also would have returned the two json objects to my React app and displayed them to the browser. I thought about creating a table that listed the records and have a button that would toggle between the validated records and non validated records.
+    • I also would have returned the two json objects to my React app and displayed them in the browser. I thought about creating a table that listed the records and have a button that would toggle between the validated records and non validated records.
 
-    • I would have attempted to write some tests. I will admit right now testing is one of my weak points and if I had more time I would have attempted to write some. My thought process came down to this: 
+    • I would have attempted to write some tests. I will admit testing is one of my weak points and if I had more time I would have attempted to write some. My thought process came down to this: 
       - write some tests.
         • Pros: shows I tried to do something I am not strong at
         • Cons: write bad tests
@@ -61,6 +61,6 @@
 
 
 ***  Feedback  ***
-  I really enjoyed working on this challenge. It really pushed me to work with things I wasn't familiar with and I learned a lot in the process. I will probably continue to work through the challenges because I want to see if I can get them. I really do enjoy solving problems and would love to get some insight to see how I did and what could have been done better. 
+  I really enjoyed working on this challenge. It really pushed me to work with things I wasn't familiar with and I learned a lot in the process. I will probably continue to work through the challenges because I want to see if I can solve them. I really do enjoy solving problems and would love to get some insight to see how I did and what could have been done better. 
 
-  My only feedback or question was the bullet point about having a command line interface to process the CSV file. A couple of bullet points below it mentioned having a UI for the user to interact with as well. I was confused about what that as I didn't see a need for a CLI if I had a UI in the browser. Maybe I just misunderstood that point. 
+  My only feedback or question was the bullet point about having a command line interface to process the CSV file. A couple of bullet points below it mentioned having a UI for the user to interact with as well. I didn't see a need for a CLI if I had a UI in the browser. Maybe I just misunderstood that point. 
