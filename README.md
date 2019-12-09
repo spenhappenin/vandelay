@@ -1,8 +1,15 @@
 ***  How To Run  ***
   This app is built with a Ruby/Rails backend and a React frontend. It may be a bit overkill but it was I know to work with. That being said you will need to run both the Rails and React servers.
 
-  • In the root of the application run `rails s -p 3001`. (starts Rails server)
-  • cd into the client folder and run `npm start` or `yarn start`. (starts webpack server)
+  Rails Setup
+  • In the root of the application you will need to:
+    • run a `rails db:create` (create the rails db - it doesn't use a db but it prevents an error)
+    • run `rails s -p 3001`. (starts Rails server)
+
+  React Setup
+  • cd into the client folder:
+    • run `npm install` or `yarn` (creates the package.json file with all js dependencies)
+    • run `npm start` or `yarn start`. (starts webpack server)
 
   One the app is running go to `http://localhost:3000` and you will be greeted with the UI. From here you can click the box or drag and drop the csv file. Right now you can only drop in one file at a time but ideally you could upload multiple CSV files and they would generate one report. 
 
