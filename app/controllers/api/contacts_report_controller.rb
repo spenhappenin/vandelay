@@ -17,7 +17,7 @@ class Api::ContactsReportController < ApplicationController
     # Loop through each record and format each phone number
     csv.each_with_index do |row, i|
       # Validate the license number
-      check_license_number(row)
+      check_license_number(row, csv, i)
 
       row[phone_1] = format_phone(row[phone_1])
       row[phone_2] = format_phone(row[phone_2])
@@ -36,7 +36,7 @@ class Api::ContactsReportController < ApplicationController
   private
   
     # Method that will validate the License number
-    def check_license_number(row)
+    def check_license_number(row, csv, i)
       # Checks to see if the License number exists
       if row["License number"] == nil || row["License number"].length != 10
         csv.delete(i)
